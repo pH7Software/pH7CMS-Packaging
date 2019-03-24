@@ -21,10 +21,11 @@ function run-packaging-cleanp() {
 echo "Please specify the release version number (e.g., 14.8.8)"
 read version
 if [ ! -z "$version" ]; then
+    name="pH7Builder"
     git clone git@github.com:pH7Software/pH7-Social-Dating-CMS.git --depth=1
     cd pH7-Social-Dating-CMS
     run-packaging-cleanp
-    zip -r ../pH7Builder-${version}.zip .
+    zip -r ../${name}-${version}.zip .
     echo "Done! pH7Builder has been successfully packaged. Ready to be distributed now!"
 else
     echo "You need to enter a version number for this release."
