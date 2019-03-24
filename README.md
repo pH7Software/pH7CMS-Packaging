@@ -1,9 +1,12 @@
 # pH7CMS Packaging.sh
 
+
+## 👀 Summary
+
 This simple `packaging.sh` bash script is used to packaging [pH7Builder](https://github.com/pH7Software/pH7-Social-Dating-CMS) (formerly pH7CMS) in order to distribute it to Sourceforge, GitHub releases and other downloading platforms.
 
 
-# 🍳 Author
+## 🍳 Author
 
 Hi You! 👋
 I'm [Pierre-Henry Soria](http://pierrehenry.be). A S.U.P.E.R Passionate Belgian Software Engineer.
