@@ -9,13 +9,13 @@
 ##
 
 function run-packaging-cleanp() {
-    _permissions
     _remove-tmp-files
     _remove-tmp-folders
     _update-composer
     _clear-caches
     _remove-dev-files
     _remove-dev-folders
+    _permissions
 }
 
 echo "Please specify the release version number (e.g., 14.8.8)"
