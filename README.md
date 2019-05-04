@@ -13,6 +13,6 @@ I'm [Pierre-Henry Soria](http://pierrehenry.be). A S.U.P.E.R Passionate Belgian 
 
 Love writing and reading too (mostly non-fiction books), and obviously learning new things every day.
 
-I also post on a daily basis at [Daily Learning Habit™](http://dailylearninghabit.com), new interesting and short thoughts about what I learnt during the day or the past few days.
+I also post on a daily basis at [Daily Learning Habit™](https://dailylearninghabit.com), new interesting and short thoughts about what I learnt during the day or the past few days.
 
 Finally, I'm also the author of hundreds of other [open source projects](https://github.com/pH-7?tab=repositories).
