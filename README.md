@@ -21,7 +21,7 @@ bash packaging.sh
 ## 🍳 Author
 
 Hi You! 👋
-I'm [Pierre-Henry Soria](http://pierrehenry.be). A S.U.P.E.R Passionate Belgian Software Engineer.
+I'm [Pierre-Henry Soria](https://pierrehenry.be). A S.U.P.E.R Passionate Belgian Software Engineer.
 
 Love writing and reading too (mostly non-fiction books), and obviously learning new things every day.
 
