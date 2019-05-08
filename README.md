@@ -6,6 +6,16 @@
 This simple `packaging.sh` bash script is used to packaging [pH7Builder](https://github.com/pH7Software/pH7-Social-Dating-CMS) (formerly pH7CMS) in order to distribute it to Sourceforge, GitHub releases and other downloading platforms.
 
 
+## 🧰 Usage
+
+Just execute this bash script 😊 It will download the latest version of pH7CMS from GitHub, `master` branch. And follow the instruction (such as mentioning the version number, etc).
+
+
+```bash
+bash packaging.sh
+```
+
+
 ## 🍳 Author
 
 Hi You! 👋
