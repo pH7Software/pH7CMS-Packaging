@@ -8,7 +8,7 @@
 # License:         GNU General Public License; See PH7.LICENSE.txt and PH7.COPYRIGHT.txt in the root directory.
 ##
 
-function run-packaging-cleanp() {
+function run-packaging-cleanup() {
     _remove-tmp-files
     _remove-tmp-folders
     _update-composer
