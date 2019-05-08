@@ -18,6 +18,11 @@ bash packaging.sh
 ```
 
 
+## ⚙ Requirement
+
+* Have [Composer](https://getcomposer.org) installed as a system-wide command.
+
+
 ## 🍳 Author
 
 Hi You! 👋

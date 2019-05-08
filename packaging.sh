@@ -61,16 +61,16 @@ function _remove-tmp-folders() {
 
 function _update-composer() {
     # Update Composer itself to the latest version
-    php ./composer.phar self-update
+    composer self-update
 
     # Install dependencies for production only (without dev packages)
-    php ./composer.phar install --no-dev
+    composer install --no-dev
 
     # Update the libraries to their latest versions
-    # php ./composer.phar update --no-dev
+    # composer update --no-dev
 
     # Optimize Composer
-    php ./composer.phar dump-autoload --optimize --no-dev
+    composer dump-autoload --optimize --no-dev
 }
 
 function _clear-caches() {
@@ -96,7 +96,6 @@ function _remove-dev-files() {
     rm ./.scrutinizer.yml
     rm ./.travis.yml
     rm ./composer.lock
-    rm ./composer.phar
     rm ./phpunit.phar
     rm ./phpunit.xml.dist
     rm ./_protected/app/configs/config.ini
