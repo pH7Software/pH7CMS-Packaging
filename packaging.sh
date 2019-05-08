@@ -18,19 +18,6 @@ function run-packaging-cleanup() {
     _permissions
 }
 
-echo "Please specify the release version number (e.g., 14.8.8)"
-read version
-if [ ! -z "$version" ]; then
-    name="pH7Builder"
-    git clone git@github.com:pH7Software/pH7-Social-Dating-CMS.git --depth=1
-    cd pH7-Social-Dating-CMS
-    run-packaging-cleanp
-    zip -r ../${name}-${version}.zip .
-    echo "Done! pH7Builder has been successfully packaged. Ready to be distributed now!"
-else
-    echo "You need to enter a version number for this release."
-fi
-
 
 #### Private functions ####
 
@@ -141,3 +128,18 @@ function _remove-dev-folders() {
     rm -rf ./_tools/
     rm -rf ./.git/
 }
+
+echo "Please specify the release version number (e.g., 14.8.8)"
+read version
+if [ ! -z "$version" ]; then
+    name="pH7Builder"
+    git clone git@github.com:pH7Software/pH7-Social-Dating-CMS.git --depth=1
+    cd pH7-Social-Dating-CMS
+    run-packaging-cleanup
+    zip -qr ../${name}-${version}.zip .
+    cd .. # Back to the main folder
+    echo "Done! pH7Builder has been successfully packaged. Ready to be distributed now!"
+    echo "The zip file is available here: ${PWD}/${name}-${version}.zip"
+else
+    echo "You need to enter a version number for this release."
+fi
