@@ -138,7 +138,7 @@ if [ ! -z "$version" ]; then
     run-packaging-cleanup
     zip -qr ../${name}-${version}.zip .
     cd .. # Back to the main folder
-    echo "Done! pH7Builder has been successfully packaged. Ready to be distributed now!"
+    echo "Done! pH7Builder has been successfully packaged. Ready to be distributed!"
     echo "The zip file is available here: ${PWD}/${name}-${version}.zip"
 else
     echo "You need to enter a version number for this release."
