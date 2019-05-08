@@ -8,7 +8,9 @@ This simple `packaging.sh` bash script is used to packaging [pH7Builder](https:/
 
 ## 🧰 Usage
 
-Just execute this bash script 😊 It will download the latest version of pH7CMS from GitHub, `master` branch. And follow the instruction (such as mentioning the version number, etc).
+Just execute this bash script 😊 It will download the latest version of pH7CMS from GitHub, `master` branch. 
+
+And follow the instruction (such as mentioning the version number, etc).
 
 
 ```bash
