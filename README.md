@@ -33,3 +33,10 @@ Love writing and reading too (mostly non-fiction books), and obviously learning 
 I also post on a daily basis at [Daily Learning Habit™](https://dailylearninghabit.com), new interesting and short thoughts about what I learnt during the day or the past few days.
 
 Finally, I'm also the author of hundreds of other [open source projects](https://github.com/pH-7?tab=repositories).
+
+
+## 📜 Disclaimer
+
+This script is only useful and can only be used by the [pH7Builder software's author](https://www.linkedin.com/in/ph7enry/) to package easily the distribution zip archive when a new version of the software is released.
+
+It won't probably be useful for you (unless you adapt it for your own software, CMS, script, ...).
