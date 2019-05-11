@@ -132,10 +132,12 @@ echo "Please specify the release version number (e.g., 14.8.8)"
 read version
 if [ ! -z "$version" ]; then
     name="pH7Builder"
-    git clone git@github.com:pH7Software/pH7-Social-Dating-CMS.git --depth=1
+    tmp_project_folder="pH7-Social-Dating-CMS"
 
-    echo "Moving to 'pH7-Social-Dating-CMS/' folder."
-    cd pH7-Social-Dating-CMS
+    git clone git@github.com:pH7Software/pH7-Social-Dating-CMS.git $tmp_project_folder --depth=1
+
+    echo "Moving to '${tmp_project_folder}/' folder."
+    cd $tmp_project_folder
 
     run-packaging-cleanup
     zip -qr ../${name}-${version}.zip .
@@ -143,8 +145,8 @@ if [ ! -z "$version" ]; then
     echo "Moving back to previous main folder '../'"
     cd ..
 
-    echo "Removing unnecessary 'pH7-Social-Dating-CMS/' folder."
-    rm -rf pH7-Social-Dating-CMS
+    echo "Removing unnecessary '${tmp_project_folder}/' folder."
+    rm -rf $tmp_project_folder
 
     echo "Done! pH7Builder has been successfully packaged. Ready to be distributed!"
     echo "The zip file is available here: ${PWD}/${name}-${version}.zip"
