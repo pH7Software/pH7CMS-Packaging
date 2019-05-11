@@ -3,7 +3,7 @@
 ##
 # Title:           Packaging Automation Tool
 #
-# Author:          Pierre-Henry Soria <hello@ph7cms.com>
+# Author:          Pierre-Henry Soria <hi@ph7.me>
 # Copyright:       (c) 2014-2019, Pierre-Henry Soria. All Rights Reserved.
 # License:         GNU General Public License; See PH7.LICENSE.txt and PH7.COPYRIGHT.txt in the root directory.
 ##
