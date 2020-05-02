@@ -4,7 +4,7 @@
 # Title:           Packaging Automation Tool
 #
 # Author:          Pierre-Henry Soria <hi@ph7.me>
-# Copyright:       (c) 2014-2019, Pierre-Henry Soria. All Rights Reserved.
+# Copyright:       (c) 2014-2020, Pierre-Henry Soria. All Rights Reserved.
 # License:         GNU General Public License; See PH7.LICENSE.txt and PH7.COPYRIGHT.txt in the root directory.
 ##
 
@@ -139,7 +139,11 @@ if [ ! -z "$version" ]; then
     echo "Moving to '${tmp_project_folder}/' folder."
     cd $tmp_project_folder
 
+
+    echo "Cleaning up the project. Removing unnecessary folders such as dev/testing files, etc."
     run-packaging-cleanup
+
+    echo "Creating a zip archive for v${version}"
     zip -qr ../${name}-${version}.zip .
 
     echo "Moving back to previous main folder '../'"
