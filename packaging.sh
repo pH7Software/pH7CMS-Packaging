@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##
-# Title:           Packaging Automation Tool
+# Title:           Packaging Automation Tool for pH7Builder software.
 #
 # Author:          Pierre-Henry Soria <hi@ph7.me>
 # Copyright:       (c) 2014-2020, Pierre-Henry Soria. All Rights Reserved.
@@ -152,8 +152,8 @@ if [ ! -z "$version" ]; then
     echo "Removing unnecessary '${tmp_project_folder}/' folder."
     rm -rf $tmp_project_folder
 
-    echo "Done! pH7Builder has been successfully packaged. Ready to be distributed!"
-    echo "The zip file is available here: ${PWD}/${name}-${version}.zip"
+    echo "Whoopie! pH7Builder has been successfully packaged and ready to be distributed!"
+    echo "The zip file is available at: ${PWD}/${name}-${version}.zip"
 else
     echo "You need to enter a version number for this release."
 fi
