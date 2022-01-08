@@ -56,6 +56,7 @@ function _remove-tmp-folders() {
     rm -rf ./_protected/.quarantine/
     rm -rf ./_protected/.tmb/
     # Composer cache folder
+    rm -rf ./_install/vendor/cache/
     rm -rf ./_protected/vendor/cache/
 }
 
@@ -65,12 +66,15 @@ function _update-composer() {
 
     # Install dependencies for production only (without dev packages)
     composer install --no-dev
+    composer install --working-dir _install --no-dev
 
     # Update the libraries to their latest versions
     # composer update --no-dev
+    # composer update --working-dir _install --no-dev
 
     # Optimize Composer
     composer dump-autoload --optimize --no-dev
+    composer dump-autoload --working-dir _install --optimize --no-dev
 }
 
 function _clear-caches() {
@@ -96,6 +100,7 @@ function _remove-dev-files() {
     rm ./.scrutinizer.yml
     rm ./.travis.yml
     rm ./composer.lock
+    rm ./_install/composer.lock
     rm ./phpunit.phar
     rm ./phpunit.xml.dist
     rm ./_protected/app/configs/config.ini
