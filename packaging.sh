@@ -121,8 +121,6 @@ function _remove-dev-files() {
 function _remove-dev-folders() {
     # Config folders
     rm -rf ./.github/
-    rm -rf ./coverage/ # PHPUnit coverage reports
-    rm -rf ./.idea/ # PHPStorm
 
     ## Others
     rm -f ./_protected/app/system/core/assets/cron/_delay/*
