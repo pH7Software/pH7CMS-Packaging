@@ -29,6 +29,7 @@ function _permissions() {
     # Specific ones
     sudo chmod -R 777 ./_install/data/logs/
     sudo chmod -R 777 ./_install/data/caches/
+    sudo chmod -R 777 ./_install/vendor/smarty/* # Change permission to prevent "Auto Install Folder Removal" to fail due to permission issues
     sudo chmod -R 777 ./data/system/modules/*
     sudo chmod -R 777 ./_repository/module/*
     sudo chmod -R 777 ./_repository/upgrade/*
