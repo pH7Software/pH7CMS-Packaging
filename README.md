@@ -1,4 +1,4 @@
-# 🚀 pH7CMS Packaging.sh 📦
+# 🚀 pH7Builder Packaging.sh 📦
 
 
 ## 👀 Summary
