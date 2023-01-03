@@ -64,7 +64,7 @@ function _update-composer() {
     composer install --no-dev
     composer install --working-dir _install --no-dev
 
-    # Update the libraries to their latest versions (careful: some versions could break the software)
+    # Update the libraries to their latest versions (careful, some might have breaking changes in their minor patches)
     composer update --no-dev
     composer update --working-dir _install --no-dev
 
@@ -148,7 +148,7 @@ if [ ! -z "$version" ]; then
     echo "Moving back to previous main folder '../'"
     cd ..
 
-    echo "Removing unnecessary '${tmp_project_folder}/' folder."
+    echo "Removing temporary '${tmp_project_folder}/' folder."
     rm -rf $tmp_project_folder
 
     echo "Whoopie! pH7Builder has been successfully packaged and ready to be distributed!"
